@@ -1,0 +1,493 @@
+:root{
+    --primaryColor : #333C50;
+    --secondaryColor : #FCBF84;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.fa-bars{
+    color: var(--primaryColor);
+}
+
+
+body{
+    
+    background-image: linear-gradient(to bottom right, #565E75, #171D2F);
+}
+
+.nav-bar{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 60px;
+    padding: 30px 50px;
+    border-radius: 30px;
+}
+
+.dish a{
+    text-decoration: none;
+}
+
+.dish-para{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: 900;  
+    letter-spacing: 4px;
+    color: var(--primaryColor);
+    font-size: 4vh;
+    text-decoration: none;
+}
+
+.nav, a{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.nav a{
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.img-top{
+    display: none;
+}
+
+.nav a:hover .img-bottom{
+    display: none;
+}
+
+.nav a:hover .img-top{
+    display: flex;
+}
+
+.nav p{
+    color: var(--primaryColor);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 60px;
+    padding: 30px 50px;
+}
+
+.head-text h1{
+    font-size: 07vh;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--secondaryColor);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.head-text p{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.cta{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: 2px solid var(--secondaryColor);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.cta:hover{
+    color: var(--primaryColor);
+    background: var(--secondaryColor);
+    transition: color .3s , background .3s;
+}
+
+.dish{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 60px;
+    padding: 30px 50px;
+    flex-wrap: wrap;
+}
+
+.dish-card{
+    width: 300px;
+    height: 400px;
+    border-radius: 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin: 20px 10px;
+    overflow: hidden;
+}
+
+.dish-img{
+    width: 300px;
+}
+
+.stars img{
+    width: 25px;
+    margin: 5px;
+}
+
+.stars{
+    margin-bottom: 10px;
+}
+
+.dish-head{
+    color: var(--primaryColor);
+    font-size: 3.5vh;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+
+.dish-para{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin-top: -90px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+    padding: 50px 20px;
+}
+
+
+.contact-head h1{
+    font-size: 07vh;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--primaryColor);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.contact-head > p{
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin-top: 150px;
+}
+
+.contact-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.contact-detail a{
+    text-decoration: none;
+}
+
+.contact-detail img{
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.image-top{
+    display: none;
+}
+
+.contact-detail a:hover .image-top{
+    display: flex;
+}
+
+.contact-detail a:hover .image-bottom{
+    display: none;
+}
+
+.contact-detail div{
+    margin:20px 40px;
+}
+
+.contacts{
+    margin-top: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    color: var(--primaryColor);
+}
+
+.contacts p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+.contact > p{
+    letter-spacing: 3px;
+    font-size: 2vh;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    margin: 30px;
+    padding-top: 10px;
+}
+
+.nav-mob{
+    display: none;
+}
+
+.nav-mob a{
+    text-decoration: none;
+}
+
+.navBar-mob img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.navBar-mob a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+
+
+.navBar-mob{
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    left: 0%;
+    top: 30%;
+    padding: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+}
+
+.navBar-mob a{
+    padding: 30px 10px;
+}
+
+.mobimg-top{
+    display: none;
+}
+
+.navBar-mob a:hover .mobimg-top{
+    display: flex;
+}
+
+.navBar-mob a:hover .mobimg-bottom{
+    display: none   ;
+}
+
+
+
+
+/*-----------------------------
+
+    recepie page
+
+------------------------------*/
+
+
+
+.recepie-head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 80px;
+}
+
+.recepieimg{
+    width: 600px;
+    border-radius: 40px;
+}
+
+.recepie-detail{
+    width: 600px;
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 40px;
+}
+
+.recepie-detail h1{
+    font-size: 05vh;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--primaryColor);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.recepie-detail p{
+    color: var(--primaryColor);
+    margin-bottom: 20px;
+}
+
+.ingredients h2{
+    font-family: 'Libre Baskerville', serif;
+    color: var(--primaryColor);
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.ingredients li{
+    color: var(--primaryColor);
+    margin-bottom: 5px; 
+    list-style: none;
+}
+
+.ingredients ul{
+    margin-bottom: 20px;
+}
+
+.recepie-process{
+    width: 90%;
+    margin: 70px auto;
+}
+
+.recepie-process span{
+    font-weight: bold;
+}
+
+.recepie-process h1{
+    font-size: 07vh;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.recepie-process li{
+    list-style: square;
+    color: white;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 2.4vh;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .nav{
+        display: none;
+    }
+
+    .nav-mob{
+        display: flex;
+    }
+
+    .head-text h1{
+        font-size: 5vh;
+    }
+
+    .dish {
+        margin: 30px 40px;
+        padding: 0px 0px;
+    }
+    
+    .dish-card{
+        width: 270px;
+    }
+
+    .contact-head{
+        width: 90%;
+    }
+
+    .recepieimg{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+
+    .header{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        margin: 50px 20px;
+        padding: 30px 20px;
+    }
+
+    .header h1{
+        font-size: 5vh;
+    }
+
+    .head-text{
+        margin-bottom: 60px;
+    }
+
+    .dish-card{
+        width: 400px;
+    }
+
+    .dish-img{
+        width: 400px;
+    }
+
+    .contact-head h1{
+        font-size: 05vh;
+    }
+
+    .contact-head > p{
+        font-size: 1.5vh;
+    }
+
+    .contact-detail{
+        flex-direction: column;
+    }
+
+    .recepieimg{
+        width: 450px;   
+        margin-bottom: 30px;
+    }
+    
+}
+
+

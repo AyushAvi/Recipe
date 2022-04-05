@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefify</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div class="nav-bar">
+        <a href="./index.html" class="logo">Chefify</a>
+        <div class="nav" id="navBar">
+                <a href="./bread-index.html">
+                    <img class="img-bottom" src="./Images/bread.png" alt="Bread-icon">
+                    <img class="img-top" src="./Images/bread-hover.png" alt="Bread-icon">
+                    <p>Breads</p>
+                </a>
+                <a href="./side-dish-index.html">
+                    <img class="img-bottom" src="./Images/dessert.png" alt="Dessert-icon">
+                    <img class="img-top" src="./Images/dessert-hover.png" alt="Dessert-icon">
+                    <p>Side Dish</p>
+                </a>
+                <a href="./main-course-index.html">
+                    <img class="img-bottom" src="./Images/main-course.png" alt="MainCourse-icon">
+                    <img class="img-top" src="./Images/main-course-hover.png" alt="MainCourse-icon">
+                    <p>Main Course</p>
+                </a>
+                <a href="./drinks-index.html">
+                    <img class="img-bottom" src="./Images/drinks.png" alt="Drinks-icon">
+                    <img class="img-top" src="./Images/drinks-hover.png" alt="Drinks-icon">
+                    <p>Drinks</p>
+                </a>
+        </div>
+        <div class="nav-mob" id="navBarMob">
+            <button class="bar" onclick="nav()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navBar-mob" id="navBarmob">
+                <a href="./bread-index.html">
+                    <img class="mobimg-bottom" src="./Images/bread.png" alt="Bread-icon">
+                    <img class="mobimg-top" src="./Images/bread-hover.png" alt="Bread-icon">
+                    <p>Breads</p>
+                </a>
+                <a href="./side-dish-index.html">
+                    <img class="mobimg-bottom" src="./Images/dessert.png" alt="Dessert-icon">
+                    <img class="mobimg-top" src="./Images/dessert-hover.png" alt="Dessert-icon">
+                    <p>Side Dish</p>
+                </a>
+                <a href="./main-course-index.html">
+                    <img class="mobimg-bottom" src="./Images/main-course.png" alt="MainCourse-icon">
+                    <img class="mobimg-top" src="./Images/main-course-hover.png" alt="MainCourse-icon">
+                    <p>Main Course</p>
+                </a>
+                <a href="./drinks-index.html">
+                    <img class="mobimg-bottom" src="./Images/drinks.png" alt="Drinks-icon">
+                    <img class="mobimg-top" src="./Images/drinks-hover.png" alt="Drinks-icon">
+                    <p>Drinks</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="head-text">
+            <h1>Everyone can be a Chef</h1>
+            <p>You can be a chef too</p>
+        </div>
+        <div>
+            <a href="#contact" class="cta">contact us</a>
+        </div>
+    </div>
+
+    <div class="dish">
+        <a href="./biscuit.html" class="bread1, dish-card">
+            <img class="dish-img" src="./Images/bread1.jpg" alt="Homemade Biscuit">
+            <h1 class="dish-head">Homemade Biscuit</h1>
+            <div class="stars">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star0.png" alt="Star">
+                <img src="./Images/star0.png" alt="Star">
+            </div>
+            <p class="dish-para">Breads</p>
+        </a>
+        <a href="./muffins.html" class="bread1, dish-card">
+            <img class="dish-img" src="./Images/bread2.jpg" alt="Chocolate Muffins">
+            <h1 class="dish-head">Chocolate Muffins</h1>
+            <div class="stars">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star1.png" alt="Star">
+                <img src="./Images/star0.png" alt="Star">
+            </div>
+            <p class="dish-para">Breads</p>
+        </a>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-head">
+            <h1>Connect with us</h1>
+            <p>We will be happy to serve you</p>
+            <div class="contact-detail">
+                <div>
+                    <a href="tel:08770209016" class="phone contacts">
+                        <img class="image-bottom" src="./Images/phone.png" alt="phone">
+                        <img  class="image-top" src="./Images/phone-hover.png" alt="phone">
+                        <p>+91 8770209016</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:ayushmishraavi@gmail.com" class="email contacts">
+                        <img class="image-bottom" src="./Images/mail.png" alt="mail">
+                        <img class="image-top" src="./Images/mail-hover.png" alt="mail">
+                        <p>ayushmishraavi@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>Website created by Ayush</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/83152cff97.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
